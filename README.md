@@ -1,0 +1,1 @@
+1. [Link](https://anthropic.skilljar.com/claude-code-in-action/486938) to lessons.
