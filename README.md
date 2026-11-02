@@ -6,5 +6,10 @@ Build `MCP Chat`, a cli application that enables interactive chat capabilities w
 
 
 
+
+
+
+
+
 References
 - https://agentskills.io/skill-creation/best-practices
