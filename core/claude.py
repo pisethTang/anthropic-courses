@@ -34,24 +34,25 @@ class Claude:
             self, 
             messages, 
             system=None, 
-            temperature=1.0,
+            # temperature=1.0,
             stop_sequences=[],
             tools=None,
             thinking=False,
-            thinking_budget=1024,
+            # thinking_budget=1024,
     ) -> Message:
         params = {
             "model": self.model,
-            "max_token": 8000,
+            "max_tokens": 8000,
             "messages": messages,
-            "temperature": temperature,
-            "stop_sequence": stop_sequences,
+            # "temperature": temperature,
+            "stop_sequences": stop_sequences,
         }
         if thinking:
-            params["thinking"] = {
-                "type": "enabled",
-                "budget_tokens": thinking_budget,
-            }
+            params["thinking"] = {"type": "adaptive"}
+            # params["thinking"] = {
+            #     "type": "enabled",
+            #     "budget_tokens": thinking_budget,
+            # }
         if tools:
             params["tools"] = tools
         if system:
