@@ -13,3 +13,11 @@
 -------
 
 It's so boring right now ...!!
+
+
+
+
+# 6/November/2026
+Yes it's so boring! 
+
+https://anthropic.skilljar.com/introduction-to-model-context-protocol/296693
